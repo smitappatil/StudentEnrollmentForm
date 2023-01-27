@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Bootstrap Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script
+        src="https://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Student Enrollment  Form</h2>
+            <form id="stdForm" method="post">
+                <div class="form-group">
+                    <span><label for="stdRollNo">Student Roll No:</label><label id="stdRollNoMsg"></label></span>
+                    <input type="text" class="form-control" name="stdRollNo" id="stdRollNo" placeholder="Enter Student Roll No" required onchange="stdActiv()">
+                </div>
+                <div class="form-group">
+                    <label for="stdName">Student Name:</label>
+                    <input type="text" class="form-control" id="stdName" placeholder="Enter Student Name" name="stdName" >
+                </div>
+                <div class="form-group">
+                    <label for="stdClass">Student Class:</label>
+                    <input type="text" class="form-control" id="stdClass" placeholder="Enter Student Class" name="stdClass" >
+                </div>
+                <div class="form-group">
+                    <label for="stdDOB">Student Date Of Birth:</label>
+                    <input type="date" class="form-control" id="stdDOB" placeholder="Enter Student Date Of Birth" name="stdDOB" >
+                </div>
+                <div class="form-group">
+                    <label for="stdAdd">Student Address:</label>
+                    <input type="text" class="form-control" id="stdAdd" placeholder="Enter Student Address" name="stdAdd" >
+                </div>
+                <div class="form-group">
+                    <label for="stdEnrollDate">Student Enrollment Date:</label>
+                    <input type="date" class="form-control" id="stdEnrollDate" placeholder="Enter Student Enrollment Date" name="stdEnrollDate" >
+                </div>
+                <input type="button" class="btn btn-primary" id="stdSave" value="Save" onclick="saveData();" >
+                <input type="button" class="btn btn-primary" id="stdUpdate" value="Update" onclick="updateData();" >
+                <input type="button" class="btn btn-primary" id="stdReset" value="Reset" onclick="resetForm();" >
+            </form>
+        </div>
+
+       <script type="text/javascript" src="js/student.js"></script>
+    </body>
+</html>
